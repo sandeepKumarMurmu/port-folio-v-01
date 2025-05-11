@@ -1,10 +1,11 @@
 import { ThemeToggle } from './ThemeTogle';
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
-        <div className="navbar bg-base-200 px-10 shadow-md rounded-md mx-auto w-10/11">
+        <div className="navbar bg-base-200 px-10 shadow-md mx-auto w-full fixed top-0 z-50">
             <div className="navbar-start">
-                <a className="text-xl cursor-pointer font-bold">S. K. Murmu</a>
+                <Link to='/' className="text-xl cursor-pointer font-bold">S. K. Murmu</Link>
             </div>
 
             <div className="navbar-end">

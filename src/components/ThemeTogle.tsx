@@ -5,11 +5,11 @@ import { Sun, Moon } from "lucide-react"; // Use your preferred icons
 type Theme = "lemonade" | "dark";
 
 export const ThemeToggle: React.FC = () => {
-    const [theme, setTheme] = useState<Theme>("lemonade");
+    const [theme, setTheme] = useState<Theme>("dark");
 
     // Load theme on initial render
     useEffect(() => {
-        const savedTheme = (localStorage.getItem("theme") as Theme) || "lemonade";
+        const savedTheme = (localStorage.getItem("theme") as Theme) || "dark";
         setTheme(savedTheme);
         document.documentElement.setAttribute("data-theme", savedTheme);
     }, []);
