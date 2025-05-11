@@ -6,7 +6,7 @@ import pythonIcon from '../assets/Python.svg';
 import htmlIcon from '../assets/HTML.svg';
 import cssIcon from '../assets/CSS.svg';
 import sqlIcon from '../assets/SQL.svg';
-import reactIcon from '../assets/React.svg';
+import reactIcon from '../assets/react.svg';
 import expressIcon from '../assets/Express.svg';
 import nestIcon from '../assets/Nest.js.svg';
 import nodeIcon from '../assets/Node.js.svg';
