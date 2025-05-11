@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar";
 import Routing from "./routes/routs";
 
