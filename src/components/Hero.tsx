@@ -10,7 +10,7 @@ function Hero() {
                     className="max-w-sm rounded-bl-4xl rounded-tr-4xl shadow-2xl opacity-80"
                 />
                 <div className="space-y-6 text-base">
-                    <h1 className="text-5xl font-extrabold">Sandeep Kumar Murmu</h1>
+                    <h1 className="text-4xl font-extrabold">Sandeep Kumar Murmu</h1>
 
                     <h2 className="text-2xl font-semibold">
                         💻 Full-Stack Software Engineer |
@@ -67,9 +67,21 @@ function Hero() {
                         </p>
 
                         <p>Let’s craft software that performs, scales, and lasts.</p>
+
+                        
+                        <p className="text-lg font-semibold text-primary tracking-wide">
+                            Let’s connect on <span className="underline cursor-pointer hover:text-gray-700">
+                                <a href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9/" target="blank">LinkedIn</a></span> |
+                            <span className="underline cursor-pointer hover:text-gray-700">
+                                <a href="https://github.com/sandeepKumarMurmu" target="blank">GitHub</a></span> |
+                            <span className="underline cursor-pointer  hover:text-gray-700">
+                                <a href="mailto:snadeep.16murmu@gmail.com" target="blank">Mail</a></span>
+                        </p>
+
+
                     </div>
 
-                    <button className="btn btn-primary shadow-lg">Get In Touch</button>
+                    {/* <button className="btn btn-primary shadow-lg">Get In Touch</button> */}
                 </div>
 
 

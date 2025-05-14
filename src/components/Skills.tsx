@@ -18,6 +18,16 @@ import renderIcon from '../assets/11773545.png';
 import dockerIcon from '../assets/Docker.svg';
 import gitIcon from '../assets/Git.svg';
 import githubIcon from '../assets/GitHub.svg';
+import sequlizeIcon from '../assets/Sequelize.svg';
+import mongooseIcon from '../assets/Mongoose.js.svg';
+import tailwindIcon from '../assets/TailwindCSS.svg';
+import redisIcon from '../assets/Redis.svg';
+import reduxIcon from '../assets/Redux.svg';
+import tsIcon from '../assets/TypeScript.svg';
+import postmanIcon from '../assets/Postman.svg'
+import slackIcon from '../assets/Slack.svg';
+import jiraIcon from '../assets/Jira.svg';
+import jenkinsIcon from '../assets/Jenkins.svg';
 
 
 type Skill = {
@@ -36,6 +46,7 @@ const skillSections: SkillCategory[] = [
         title: 'Programming Languages',
         skills: [
             { name: 'JavaScript', icon: jsIcon, level: 5 },
+            { name: 'TypeScript', icon: tsIcon, level: 5 },
             { name: 'Python', icon: pythonIcon, level: 2 },
             { name: 'HTML', icon: htmlIcon, level: 4 },
             { name: 'CSS', icon: cssIcon, level: 4 },
@@ -48,14 +59,19 @@ const skillSections: SkillCategory[] = [
             { name: 'React', icon: reactIcon, level: 5 },
             { name: 'Node.js', icon: nodeIcon, level: 5 },
             { name: 'Express.js', icon: expressIcon, level: 5 },
-            { name: 'Nest.js', icon: nestIcon, level: 2 },
+            { name: 'Nest.js', icon: nestIcon, level: 3 },
+            { name: 'Sequelize', icon: sequlizeIcon, level: 5 },
+            { name: 'Mongoose', icon: mongooseIcon, level: 3 },
+            { name: 'Tailwind', icon: tailwindIcon, level: 3 },
+            { name: 'Redux', icon: reduxIcon, level: 3 },
         ],
     },
     {
         title: 'Database Management',
         skills: [
-            { name: 'MongoDB', icon: mongoIcon, level: 2 },
+            { name: 'MongoDB', icon: mongoIcon, level: 4 },
             { name: 'MySQL', icon: mysqlIcon, level: 5 },
+            { name: 'Redis', icon: redisIcon, level: 5 },
         ],
     },
     {
@@ -72,6 +88,10 @@ const skillSections: SkillCategory[] = [
             { name: 'Docker', icon: dockerIcon, level: 4 },
             { name: 'Git', icon: gitIcon, level: 5 },
             { name: 'Github', icon: githubIcon, level: 5 },
+            { name: 'PostMan', icon: postmanIcon, level: 5 },
+            { name: 'Slack', icon: slackIcon, level: 5 },
+            { name: 'Jira', icon: jiraIcon, level: 5 },
+            { name: 'Jenkins', icon: jenkinsIcon, level: 4 },
         ],
     },
 ];
@@ -80,21 +100,22 @@ const skillSections: SkillCategory[] = [
 const SkillsSection: React.FC = () => {
     return (
 
-        <section id="skills" className="py-30 px-40 bg-base-100 text-base-content">
+        <section id="skills" className="py-25 px-4 sm:px-6 md:px-12 lg:px-20 bg-base-100 text-base-content">
             <h2 className="text-3xl font-bold text-center mb-8">Skills & Technologies</h2>
 
             {skillSections.map((category) => (
                 <div key={category.title} className="mb-10">
-                    <h3 className="text-xl font-semibold mb-4 px-6 text-center text-primary">{category.title}</h3>
-                    <div className="w-76 h-1 bg-primary mx-auto mb-4 rounded"></div>
-                    <div className="flex gap-10 p-4 md:px-12 overflow-x-auto scroll-smooth justify-center">
+                    <h3 className="text-xl font-semibold mb-4 text-center">{category.title}</h3>
+                    <div className="w-100 h-0.5 bg-secondary-content mx-auto mb-4 "></div>
+
+                    <div className="carousel carousel-center rounded-box w-full gap-6 justify-center p-4">
                         {category.skills.map((skill) => (
                             <div
                                 key={skill.name}
-                                className="flex flex-col items-center p-4 rounded-xl shadow-md bg-base-200 hover:scale-105 transition-transform"
+                                className="flex-shrink-0 flex flex-col items-center p-3 min-w-[120px] rounded-xl shadow-md bg-base-200 hover:scale-105 transition-transform"
                             >
                                 <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-2" />
-                                <p className="font-medium mb-1">{skill.name}</p>
+                                <p className="font-medium mb-1 text-center">{skill.name}</p>
                                 <div className="flex">
                                     {[...Array(5)].map((_, i) =>
                                         i < skill.level ? (
@@ -110,6 +131,7 @@ const SkillsSection: React.FC = () => {
                 </div>
             ))}
         </section>
+
     );
 };
 

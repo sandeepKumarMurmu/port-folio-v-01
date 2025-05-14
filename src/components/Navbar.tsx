@@ -12,6 +12,7 @@ function Navbar() {
             <div className="navbar-end">
                 <div className="flex items-center gap-4 px-4">
                     <div className="tabs tabs-bordered">
+                        <LinkTag link='/' styles='tab text-base' tagName='Home' />
                         <LinkTag link='/skills' styles='tab text-base' tagName='Skills' />
                     </div>
                     <ThemeToggle />
