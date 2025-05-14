@@ -1,5 +1,4 @@
 import { ThemeToggle } from './ThemeTogle';
-// import { Link } from 'react-router-dom';
 import LinkTag from './LinkTag';
 
 function Navbar() {
