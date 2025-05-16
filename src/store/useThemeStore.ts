@@ -1,14 +1,12 @@
+// toggleStore.ts
 import { create } from 'zustand';
 
-interface ThemeState {
-    theme: string;
-    setTheme: (theme: string) => void;
-}
+type ToggleState = {
+    isOpen: boolean;
+    toggle: () => void;
+};
 
-export const useThemeStore = create<ThemeState>((set) => ({
-    theme: localStorage.getItem("chat-theme") || "coffee",
-    setTheme: (theme: string) => {
-        localStorage.setItem("chat-theme", theme);
-        set({ theme });
-    },
+export const useToggleStore = create<ToggleState>((set) => ({
+    isOpen: false,
+    toggle: () => set((state) => ({ isOpen: !state.isOpen })),
 }));

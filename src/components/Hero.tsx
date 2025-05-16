@@ -1,5 +1,7 @@
+import { useToggleStore } from '../store/useThemeStore';
+
 function Hero() {
-    console.log("Hero component rendered");
+    const { toggle } = useToggleStore();
     return (
         <div
             className="hero min-h-svh"
@@ -68,8 +70,8 @@ function Hero() {
 
                         <p>Let’s craft software that performs, scales, and lasts.</p>
 
-                        
-                        <p className="text-lg font-semibold text-primary tracking-wide">
+
+                        <p className="text-lg font-semibold text-primary tracking-wide" >
                             Let’s connect on <span className="underline cursor-pointer hover:text-gray-700">
                                 <a href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9/" target="blank">LinkedIn</a></span> |
                             <span className="underline cursor-pointer hover:text-gray-700">
@@ -80,12 +82,14 @@ function Hero() {
 
 
                     </div>
-
-                    {/* <button className="btn btn-primary shadow-lg">Get In Touch</button> */}
+                    <button className="btn btn-accent" onClick={toggle}>Get in touch</button>
                 </div>
 
 
             </div>
+
+            {/* {display && <GetInTouch />} */}
+
         </div>
     )
 }
