@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
-import Experince from '../components/Experince';
+// import Experince from '../components/Experince';
 
 function Routing() {
     return (

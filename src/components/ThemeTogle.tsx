@@ -3,9 +3,8 @@ import type { ChangeEvent } from 'react';
 import { Sun, Moon } from "lucide-react"; // Use your preferred icons
 
 type Theme = "winter" | "dark";
-type Props = { isIcon: boolean };
 
-export const ThemeToggle: React.FC<Props> = ({ isIcon }) => {
+export const ThemeToggle: React.FC = () => {
     const [theme, setTheme] = useState<Theme>("dark");
 
     // Load theme on initial render
