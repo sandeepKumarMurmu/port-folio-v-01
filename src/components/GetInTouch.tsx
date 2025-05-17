@@ -10,12 +10,13 @@ function GetInTouch() {
 
                 {/* Close Button */}
                 <button
-                    className="absolute top-4 right-4 btn btn-sm btn-circle bg-transparent hover:bg-error hover:text-error-content transition-all duration-300 shadow-md"
+                    className="absolute top-4 right-4 btn btn-sm btn-circle bg-transparent border-0 shadow-none transition-transform duration-300 hover:rotate-90"
                     aria-label="Close"
                     onClick={toggle}
                 >
                     <CircleX className="w-5 h-5" />
                 </button>
+
 
                 <div className="flex-1 flex items-center justify-center bg-base-200 rounded-xl p-6">
                     <div className="text-center space-y-4">

@@ -39,9 +39,9 @@ function Hero() {
 
                         <p>
                             ☁️ I master
-                            <span className="badge badge-accent mx-1">AWS</span>,
-                            <span className="badge badge-accent mx-1">CI/CD</span> &
-                            <span className="badge badge-accent mx-1">Cloud Deployments</span> — having built solutions that
+                            <span className="badge badge-success mx-1">AWS</span>,
+                            <span className="badge badge-success mx-1">CI/CD</span> &
+                            <span className="badge badge-success mx-1">Cloud Deployments</span> — having built solutions that
                             <span className="font-semibold text-primary"> reduced video delivery cost by 70%</span> and
                             <span className="font-semibold text-primary"> optimized payment flows</span>.
                         </p>
@@ -49,15 +49,16 @@ function Hero() {
                         <p>
                             🔒 Deeply focused on
                             <span className="text-primary font-semibold"> clean architecture</span>,
-                            <span className="text-primary font-semibold"> security (JWT, OAuth2)</span>,
+                            <span className="text-primary font-semibold"> security (<span className="badge badge-outline badge-ghost mx-1">JWT</span>
+                                <span className="badge badge-outline badge-ghost mx-1">oauth2</span>)</span>,
                             <span className="text-primary font-semibold"> DevOps</span> (
-                            <span className="badge badge-ghost mx-1">Git</span>
-                            <span className="badge badge-ghost mx-1">Docker</span>
-                            <span className="badge badge-ghost mx-1">Jenkins</span>
+                            <span className="badge badge-outline badge-ghost mx-1">Git</span>
+                            <span className="badge badge-outline badge-ghost mx-1">Docker</span>
+                            <span className="badge badge-outline badge-ghost mx-1">Jenkins</span>
                             ), and
                             <span className="text-primary font-semibold"> database tuning</span> (
-                            <span className="badge badge-ghost mx-1">MongoDB</span>
-                            <span className="badge badge-ghost mx-1">MySQL</span>
+                            <span className="badge badge-outline badge-ghost mx-1">MongoDB</span>
+                            <span className="badge badge-outline badge-ghost mx-1">MySQL</span>
                             ).
                         </p>
 
