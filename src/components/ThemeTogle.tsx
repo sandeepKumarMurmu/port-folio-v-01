@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import type { ChangeEvent } from 'react';
 import { Sun, Moon } from "lucide-react"; // Use your preferred icons
 
-type Theme = "lemonade" | "dark";
+type Theme = "winter" | "dark";
 
 export const ThemeToggle: React.FC = () => {
     const [theme, setTheme] = useState<Theme>("dark");
@@ -16,7 +16,7 @@ export const ThemeToggle: React.FC = () => {
 
     // Toggle theme
     const handleToggle = (e: ChangeEvent<HTMLInputElement>) => {
-        const newTheme: Theme = e.target.checked ? "lemonade" : 'dark';
+        const newTheme: Theme = e.target.checked ? "winter" : 'dark';
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
         document.documentElement.setAttribute("data-theme", newTheme);
@@ -31,7 +31,7 @@ export const ThemeToggle: React.FC = () => {
                 checked={theme !== "dark"}
                 onChange={handleToggle}
             />
-            <Sun className={`${theme === 'lemonade' ? 'text-yellow-600 fill-yellow-600 font-bold' : 'text-gray-600 font-thin'}`} />
+            <Sun className={`${theme === 'winter' ? 'text-yellow-600 fill-yellow-600 font-bold' : 'text-gray-600 font-thin'}`} />
         </div>
     );
 };

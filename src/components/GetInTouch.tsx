@@ -31,7 +31,7 @@ function GetInTouch() {
                 {/* Vertical separator */}
                 <div className="divider divider-horizontal" />
 
-                <form className="space-y-4 flex-1">
+                <form className="space-y-4 flex-1" onSubmit={toggle}>
                     <div>
                         <label className="block text-sm font-semibold text-primary mb-1">
                             Name

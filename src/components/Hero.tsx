@@ -16,7 +16,7 @@ function Hero() {
 
                     <h2 className="text-2xl font-semibold">
                         💻 Full-Stack Software Engineer |
-                        <span className="text-primary"> Node.js · React.js · AWS Specialist</span>
+                        <span className="text-secondary"> Node.js · React.js · AWS Specialist</span>
                     </h2>
 
                     <p className="text-lg leading-relaxed">
@@ -71,14 +71,32 @@ function Hero() {
                         <p>Let’s craft software that performs, scales, and lasts.</p>
 
 
-                        <p className="text-lg font-semibold text-primary tracking-wide" >
-                            Let’s connect on <span className="underline cursor-pointer hover:text-gray-700">
-                                <a href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9/" target="blank">LinkedIn</a></span> |
-                            <span className="underline cursor-pointer hover:text-gray-700">
-                                <a href="https://github.com/sandeepKumarMurmu" target="blank">GitHub</a></span> |
-                            <span className="underline cursor-pointer  hover:text-gray-700">
-                                <a href="mailto:snadeep.16murmu@gmail.com" target="blank">Mail</a></span>
+                        <p className="text-lg font-semibold tracking-wide">
+                            Let’s connect on
+                            <a
+                                href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 badge badge-outline badge-primary hover:scale-105 transition-transform"
+                            >
+                                LinkedIn
+                            </a>
+                            <a
+                                href="https://github.com/sandeepKumarMurmu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 badge badge-outline badge-primary hover:scale-105 transition-transform"
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                href="mailto:snadeep.16murmu@gmail.com"
+                                className="ml-2 badge badge-outline badge-primary hover:scale-105 transition-transform"
+                            >
+                                Mail
+                            </a>
                         </p>
+
 
 
                     </div>
