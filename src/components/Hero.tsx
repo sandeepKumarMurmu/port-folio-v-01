@@ -4,7 +4,7 @@ function Hero() {
     const { toggle } = useToggleStore();
     return (
         <div
-            className="hero min-h-svh"
+            className="hero"
         >
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img
@@ -106,9 +106,6 @@ function Hero() {
 
 
             </div>
-
-            {/* {display && <GetInTouch />} */}
-
         </div>
     )
 }

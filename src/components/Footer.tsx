@@ -19,17 +19,13 @@ function Footer() {
                     <h2 className="text-xl font-semibold">Let's Connect</h2>
                     <ul className="flex gap-x-6 items-center justify-center">
                         <li className="flex items-center gap-x-2 cursor-pointer">
-                            <Linkedin size={18} />
-                            <a href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9" target="_blank" />
+                            <a href="https://www.linkedin.com/in/sandeep-kumar-murmu-0567181a9" target="_blank" ><Linkedin size={18} /></a>
                         </li>
                         <li className="flex items-center gap-x-2 cursor-pointer">
-                            <Github size={18} />
-                            <a href="https://github.com/sandeepKumarMurmu" target="_blank" />
-
+                            <a href="https://github.com/sandeepKumarMurmu" target="_blank" ><Github size={18} /></a>
                         </li>
                         <li className="flex items-center gap-x-2 cursor-pointer">
-                            <Mail size={18} />
-                            <a href="mailto:sandeep.16murmu@gmail.com" target="_blank" />
+                            <a href="mailto:sandeep.16murmu@gmail.com" target="_blank" ><Mail size={18} /></a>
                         </li>
                     </ul>
                 </div>
