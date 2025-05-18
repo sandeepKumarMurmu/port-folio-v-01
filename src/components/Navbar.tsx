@@ -21,12 +21,12 @@ function Navbar() {
                     <LinkTag link="/skills" styles="tab text-base" tagName="Skills" />
                     <LinkTag link="/professional-experince" styles="tab text-base" tagName="Experience" />
                 </div>
-                <ThemeToggle isIcon={true} />
+                <ThemeToggle />
             </div>
 
             {/* Hamburger for mobile */}
             <div className="nav-end flex gap-2 lg:hidden">
-                <ThemeToggle isIcon={false} />
+                <ThemeToggle />
                 <button
                     onClick={toggleMenu}
                     className="btn btn-ghost btn-circle"
@@ -39,7 +39,7 @@ function Navbar() {
 
             {/* Mobile Dropdown */}
             {isOpen && (
-                <div className="absolute h-screen top-full right-0 w-64 bg-base-300 z-10 flex flex-col items-center py-4 space-y-2 lg:hidden">
+                <div className="absolute top-full right-0 w-64 bg-base-300 z-10 flex flex-col items-center py-4 space-y-2 lg:hidden">
                     <LinkTag
                         link="/"
                         styles="tab text-base text-base-content font-medium px-4 py-2"
