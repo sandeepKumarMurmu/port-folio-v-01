@@ -5,7 +5,7 @@ function Experince() {
   return (
     <>
       <section>
-        <div className="w-full p-4 flex flex-col justify-center items-center">
+        <div className="w-full px-4 flex flex-col justify-center items-center">
 
           <h2 className="text-3xl font-semibold text-base-content mb-2 text-center">Experience</h2>
           <div className="divider w-3xl -mt-2 mx-auto mb-6"></div>
