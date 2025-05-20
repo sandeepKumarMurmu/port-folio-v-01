@@ -3,7 +3,10 @@ import LinkTag from './LinkTag';
 import { useState } from 'react';
 import { MenuIcon } from 'lucide-react';
 
+import { useToggleStore } from '../store/useThemeStore';
+
 function Navbar() {
+    const { toggle } = useToggleStore();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -20,6 +23,7 @@ function Navbar() {
                     <LinkTag link="/" styles="tab text-base" tagName="Home" />
                     <LinkTag link="/skills" styles="tab text-base" tagName="Skills" />
                     <LinkTag link="/professional-experince" styles="tab text-base" tagName="Experience" />
+                    <div className='tab text-base' onClick={toggle}>Get In Touch</div>
                 </div>
                 <ThemeToggle />
             </div>
@@ -55,6 +59,7 @@ function Navbar() {
                         styles="tab text-base text-base-content font-medium px-4 py-2"
                         tagName="Experience"
                     />
+                    <div className='tab text-base text-base-content font-medium px-4 py-2' onClick={toggle}>Get In Touch</div>
                 </div>
 
             )}
