@@ -8,7 +8,7 @@ function ProffessionalExperince() {
             <h2 className="text-3xl font-semibold text-base-content mb-2 text-center">Experience</h2>
             <div className="divider w-3xl -mt-2 mx-auto mb-6"></div>
 
-            <ul className="list bg-base-100 w-6xl al shadow-md">
+            <ul className="list bg-base-100 w-7xl al shadow-md">
 
                 <li className="collapse collapse-plus bg-base-100">
                     <input type="radio" name="accordion-group" />
@@ -35,11 +35,7 @@ function ProffessionalExperince() {
                                 <img src={allenIamge} alt="Project Preview" className="w-32 h-32 object-cover rounded-lg shadow" />
                             </div>
 
-                            {/* Vertical Divider */}
-                            <div className="hidden md:flex justify-center">
-                                <div className="h-auto w-px bg-gray-300 mx-4" />
-                            </div>
-
+                            
                             {/* Right: Description */}
                             <div className="w-full md:w-2/3">
                                 <p>
