@@ -2,7 +2,7 @@ import { Linkedin, Github, Mail } from "lucide-react"; // Use your preferred ico
 
 function Footer() {
     return (
-        <section className="bg-base-300 md:px-0 px-4 p-12 mt-16 w-full">
+        <section className="bg-base-300 md:px-0 p-12 mt-16 w-full">
             <footer className="w-full max-w-[1440px] mx-auto">
                 <div className="flex flex-col">
                     <div className="md:grid md:grid-cols-3 flex flex-col mb-5 text-center">

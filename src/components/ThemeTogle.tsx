@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import type { ChangeEvent } from 'react';
 import { Sun, Moon } from "lucide-react"; // Use your preferred icons
 
 type Theme = "winter" | "dark";
@@ -14,15 +13,7 @@ export const ThemeToggle: React.FC = () => {
         document.documentElement.setAttribute("data-theme", savedTheme);
     }, []);
 
-    // Toggle theme
-    const handleToggle = (e: ChangeEvent<HTMLInputElement>) => {
-        const newTheme: Theme = e.target.checked ? "winter" : 'dark';
-        setTheme(newTheme);
-        localStorage.setItem("theme", newTheme);
-        document.documentElement.setAttribute("data-theme", newTheme);
-    };
-
-    const handelClick = () => {
+    const themeToggle = () => {
         const newTheme: Theme = theme === "winter" ? "dark" : "winter";
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
@@ -30,21 +21,17 @@ export const ThemeToggle: React.FC = () => {
      }
     return (
         <>
-            <div className="hidden lg:flex items-center gap-3">
-                <Moon className={`${theme === 'dark' ? 'text-white fill-white font-bold' : 'text-gray-400 font-thin'}`} />
-                <input
-                    type="checkbox"
-                    className="toggle"
-                    checked={theme !== "dark"}
-                    onChange={handleToggle}
-                />
-                <Sun className={`${theme === 'winter' ? 'text-yellow-600 fill-yellow-600 font-bold' : 'text-gray-600 font-thin'}`} />
-            </div>
+            {/* <div className="flex items-center" onClick={themeToggle}>
+                {theme == 'winter' ? <Sun className={`h-6 w-6 ${theme === 'winter' ? 'text-yellow-600 fill-yellow-600 font-bold' : 'text-gray-600 font-thin'}`} /> : <Moon className={`h-6 w-6 ${theme === 'dark' ? 'text-white fill-white font-bold' : 'text-gray-400 font-thin'}`} />}
+            </div> */}
 
-            <div className="lg:hidden flex items-center gap-3" onClick={handelClick}>
-                {theme == 'winter' ? <Sun className={`${theme === 'winter' ? 'text-yellow-600 fill-yellow-600 font-bold' : 'text-gray-600 font-thin'}`} /> : <Moon className={`${theme === 'dark' ? 'text-white fill-white font-bold' : 'text-gray-400 font-thin'}`} />}
-            </div>
-
+<div className="flex items-center justify-center h-10 w-10" onClick={themeToggle}>
+  {theme === 'winter' ? (
+    <Sun className={`h-6 w-6 text-yellow-600 fill-yellow-600 font-bold`} />
+  ) : (
+    <Moon className={`h-6 w-6 text-white fill-white font-bold`} />
+  )}
+</div>
         </>
 
     );

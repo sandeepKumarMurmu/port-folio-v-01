@@ -1,7 +1,7 @@
 import { ThemeToggle } from './ThemeTogle';
 import LinkTag from './LinkTag';
 import { useState } from 'react';
-import { MenuIcon } from 'lucide-react';
+import { MenuIcon, X } from 'lucide-react';
 
 import { useToggleStore } from '../store/useThemeStore';
 
@@ -12,38 +12,40 @@ function Navbar() {
         setIsOpen(!isOpen);
     }
     return (
-        <nav className='navbar bg-base-300 top-0 w-full fixed z-50 shadow-md md:px-10'>
-            <div className='flex-1'>
-                <LinkTag link='/' styles='text-xl cursor-pointer font-bold' tagName='S. K. Murmu' />
-            </div>
+        <section className='bg-base-300 py-5 px-4 md:px-10 w-full top-0 fixed z-50 shadow-md'>
+            <nav className='w-full max-w-[1440px] mx-auto'>
+                <div className='flex justify-between'>
+                    <div className='text-left flex items-center justify-center'>
+                        <LinkTag link='/' styles='text-xl cursor-pointer font-bold' tagName='S. K. Murmu' />
+                    </div>
+                    <div className='flex flex-row-reverse gap-6'>
+                        <div><ThemeToggle /></div>
+                        <div>
+                            <button
+                                onClick={toggleMenu}
+                                aria-label="Toggle Menu"
+                                className="lg:hidden flex items-center justify-center h-10 w-10"
+                            >
+                                {isOpen ? (
+                                    <X className="w-6 h-6" />
+                                ) : (
+                                    <MenuIcon className="w-6 h-6" />
+                                )}
+                            </button>
 
-            {/* Desktop Menu */}
-            <div className="hidden items-center gap-4 navbar-end lg:flex">
-                <div className="tabs tabs-bordered">
-                    <LinkTag link="/" styles="tab text-base" tagName="Home" />
-                    <LinkTag link="/skills" styles="tab text-base" tagName="Skills" />
-                    <LinkTag link="/professional-experince" styles="tab text-base" tagName="Experience" />
-                    <div className='tab text-base' onClick={toggle}>Get In Touch</div>
+                            <div className='hidden lg:block'>
+                                <LinkTag link="/" styles="tab text-base" tagName="Home" />
+                                <LinkTag link="/skills" styles="tab text-base" tagName="Skills" />
+                                <LinkTag link="/professional-experince" styles="tab text-base" tagName="Experience" />
+                                <div className='tab text-base' onClick={toggle}>Get In Touch</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ThemeToggle />
-            </div>
+            </nav>
 
-            {/* Hamburger for mobile */}
-            <div className="nav-end flex gap-2 lg:hidden">
-                <ThemeToggle />
-                <button
-                    onClick={toggleMenu}
-                    className="btn btn-ghost btn-circle"
-                    aria-label="Toggle Menu"
-                >
-                    <MenuIcon className="w-6 h-6" />
-                </button>
-            </div>
-
-
-            {/* Mobile Dropdown */}
             {isOpen && (
-                <div className="absolute top-full right-0 w-64 bg-base-300 z-10 flex flex-col items-center py-4 space-y-2 lg:hidden">
+                <div className="absolute right-0 w-50 bg-base-300 z-40 flex flex-col items-center py-4 space-y-2 lg:hidden">
                     <LinkTag
                         link="/"
                         styles="tab text-base text-base-content font-medium px-4 py-2"
@@ -63,7 +65,7 @@ function Navbar() {
                 </div>
 
             )}
-        </nav>
+        </section>
     )
 }
 
