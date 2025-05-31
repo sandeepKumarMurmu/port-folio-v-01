@@ -16,7 +16,7 @@ function Navbar() {
             <nav className='w-full max-w-[1440px] mx-auto'>
                 <div className='flex justify-between'>
                     <div className='text-left flex items-center justify-center'>
-                        <LinkTag link='/' styles='text-xl cursor-pointer font-bold' tagName='S. K. Murmu' />
+                        <LinkTag link='/' styles='text-xl cursor-pointer font-bold' tagName='Sandeep' />
                     </div>
                     <div className='flex flex-row-reverse gap-6'>
                         <div><ThemeToggle /></div>

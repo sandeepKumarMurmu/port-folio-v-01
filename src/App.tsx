@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className=" py-20 mt-16">
+      <main className="mt-20 w-full max-w-[1440px] mx-auto">
         <Routing />
       </main>
       <Footer />
