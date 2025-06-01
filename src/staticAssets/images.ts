@@ -39,14 +39,14 @@ export const company = {
 
 
 export const project = {
-    allenNext: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711033/AllenNext_uimkhi.jpg',
+    allenNext: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748795635/allen-next-logo-1_pdfayp.png',
     allenGlobal: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711033/AllenGlobal_mvids7.jpg',
-    allenDigital: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711033/AllenDigital_rtvpkr.jpg',
-    mentorashwar: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711032/mentoreshwar_logo_stzvxq.jpg',
-    chat: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711032/chat_xxaylp.webp',
-    allenAstra: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711032/AllenAstra_bgxpbu.webp',
+    allenDigital: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748796241/ANI-20230130091205_320x192_bntlyq.jpg',
+    mentorashwar: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748796750/mentoreshwar_logo_stzvxq_320x192_o50f68.jpg',
+    chat: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748793997/chat-image_vb3cfl.webp',
+    allenAstra: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748796489/allen_320x192_tzaqx8.webp',
     foodRecipe: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711031/FoodRecipi_ofcvtf.jpg',
-    vod: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748711030/vod_a38ps4.jpg'
+    vod: 'https://res.cloudinary.com/dbzootuah/image/upload/v1748795927/vod_a38ps4_320x192_hqcpzn.jpg'
 }
 
 
