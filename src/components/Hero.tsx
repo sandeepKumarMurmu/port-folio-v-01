@@ -1,6 +1,6 @@
 import { useToggleStore } from '../store/useThemeStore';
-import proImage from '../assets/sandeep.png'
 import { links } from '../staticAssets/links'
+import { profile } from '../staticAssets/images.ts';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -43,7 +43,7 @@ function Hero() {
 
                 </div>
                 <div className="w-full overflow-hidden rounded-lg order-1 md:order-2">
-                    <img src={proImage} alt="Profile" className="w-full h-full object-cover" />
+                    <img src={profile?.profile} alt="Profile" className="w-full h-full object-cover" />
                 </div>
 
             </section>

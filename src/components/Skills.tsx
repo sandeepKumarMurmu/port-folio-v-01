@@ -1,34 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-import jsIcon from '../assets/JavaScript.svg';
-import pythonIcon from '../assets/Python.svg';
-import htmlIcon from '../assets/HTML.svg';
-import cssIcon from '../assets/CSS.svg';
-import sqlIcon from '../assets/SQL.svg';
-import reactIcon from '../assets/react.svg';
-import expressIcon from '../assets/Express.svg';
-import nestIcon from '../assets/Nest.js.svg';
-import nodeIcon from '../assets/Node.js.svg';
-import mysqlIcon from '../assets/SQL Developer.svg';
-import awsIcon from '../assets/AWS.svg';
-import mongoIcon from '../assets/MongoDB.svg';
-import vercelIcon from '../assets/Vercel.svg';
-import renderIcon from '../assets/11773545.png';
-import dockerIcon from '../assets/Docker.svg';
-import gitIcon from '../assets/Git.svg';
-import githubIcon from '../assets/GitHub.svg';
-import sequlizeIcon from '../assets/Sequelize.svg';
-import mongooseIcon from '../assets/Mongoose.js.svg';
-import tailwindIcon from '../assets/TailwindCSS.svg';
-import redisIcon from '../assets/Redis.svg';
-import reduxIcon from '../assets/Redux.svg';
-import tsIcon from '../assets/TypeScript.svg';
-import postmanIcon from '../assets/Postman.svg'
-import slackIcon from '../assets/Slack.svg';
-import jiraIcon from '../assets/Jira.svg';
-import jenkinsIcon from '../assets/Jenkins.svg';
-
+import { svgIcons } from '../staticAssets/images.ts';
 
 type Skill = {
     name: string;
@@ -45,53 +18,53 @@ const skillSections: SkillCategory[] = [
     {
         title: 'Programming Languages',
         skills: [
-            { name: 'JavaScript', icon: jsIcon, level: 5 },
-            { name: 'TypeScript', icon: tsIcon, level: 5 },
-            { name: 'Python', icon: pythonIcon, level: 2 },
-            { name: 'HTML', icon: htmlIcon, level: 4 },
-            { name: 'CSS', icon: cssIcon, level: 4 },
-            { name: 'SQL', icon: sqlIcon, level: 5 },
+            { name: 'JavaScript', icon: svgIcons?.javaScript, level: 5 },
+            { name: 'TypeScript', icon: svgIcons?.ts, level: 5 },
+            { name: 'Python', icon: svgIcons?.python, level: 2 },
+            { name: 'HTML', icon: svgIcons?.html, level: 4 },
+            { name: 'CSS', icon: svgIcons?.CSS, level: 4 },
+            { name: 'SQL', icon: svgIcons?.sql, level: 5 },
         ],
     },
     {
         title: 'Frameworks & Libraries',
         skills: [
-            { name: 'React', icon: reactIcon, level: 5 },
-            { name: 'Node.js', icon: nodeIcon, level: 5 },
-            { name: 'Express.js', icon: expressIcon, level: 5 },
-            { name: 'Nest.js', icon: nestIcon, level: 3 },
-            { name: 'Sequelize', icon: sequlizeIcon, level: 5 },
-            { name: 'Mongoose', icon: mongooseIcon, level: 3 },
-            { name: 'Tailwind', icon: tailwindIcon, level: 3 },
-            { name: 'Redux', icon: reduxIcon, level: 3 },
+            { name: 'React', icon: svgIcons?.react, level: 5 },
+            { name: 'Node.js', icon: svgIcons?.nodeJs, level: 5 },
+            { name: 'Express.js', icon: svgIcons?.express, level: 5 },
+            { name: 'Nest.js', icon: svgIcons?.nest, level: 3 },
+            { name: 'Sequelize', icon: svgIcons?.sequelize, level: 5 },
+            { name: 'Mongoose', icon: svgIcons?.mongoose, level: 3 },
+            { name: 'Tailwind', icon: svgIcons?.tailwind, level: 3 },
+            { name: 'Redux', icon: svgIcons?.redux, level: 3 },
         ],
     },
     {
         title: 'Database Management',
         skills: [
-            { name: 'MongoDB', icon: mongoIcon, level: 4 },
-            { name: 'MySQL', icon: mysqlIcon, level: 5 },
-            { name: 'Redis', icon: redisIcon, level: 5 },
+            { name: 'MongoDB', icon: svgIcons?.mongoDB, level: 4 },
+            { name: 'MySQL', icon: svgIcons?.sqlDB, level: 5 },
+            { name: 'Redis', icon: svgIcons?.redis, level: 5 },
         ],
     },
     {
         title: 'Cloud Services',
         skills: [
-            { name: 'AWS', icon: awsIcon, level: 3 },
-            { name: 'Vercel', icon: vercelIcon, level: 3 },
-            { name: 'Render', icon: renderIcon, level: 3 },
+            { name: 'AWS', icon: svgIcons?.aws, level: 3 },
+            { name: 'Vercel', icon: svgIcons?.vercel, level: 3 },
+            { name: 'Render', icon: svgIcons?.render, level: 3 },
         ],
     },
     {
         title: 'Other Tools',
         skills: [
-            { name: 'Docker', icon: dockerIcon, level: 4 },
-            { name: 'Git', icon: gitIcon, level: 5 },
-            { name: 'Github', icon: githubIcon, level: 5 },
-            { name: 'PostMan', icon: postmanIcon, level: 5 },
-            { name: 'Slack', icon: slackIcon, level: 5 },
-            { name: 'Jira', icon: jiraIcon, level: 5 },
-            { name: 'Jenkins', icon: jenkinsIcon, level: 4 },
+            { name: 'Docker', icon: svgIcons?.docker, level: 4 },
+            { name: 'Git', icon: svgIcons?.git, level: 5 },
+            { name: 'Github', icon: svgIcons?.gitHub, level: 5 },
+            { name: 'PostMan', icon: svgIcons?.postman, level: 5 },
+            { name: 'Slack', icon: svgIcons?.slack, level: 5 },
+            { name: 'Jira', icon: svgIcons?.jira, level: 5 },
+            { name: 'Jenkins', icon: svgIcons?.jenkins, level: 4 },
         ],
     },
 ];

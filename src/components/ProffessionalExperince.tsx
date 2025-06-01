@@ -1,5 +1,4 @@
-import allenIamge from '../assets/Allen.jpeg'
-import masaiImage from '../assets/masai.jpg'
+import {company} from '../staticAssets/images.ts'
 
 function ProffessionalExperince() {
     return (
@@ -16,7 +15,7 @@ function ProffessionalExperince() {
                     <div className="collapse-title flex items-center gap-4">
                         <div className="text-4xl font-thin opacity-30 tabular-nums">02</div>
                         <div>
-                            <img className="size-10 rounded-xl" src={allenIamge} alt="Allen Logo" />
+                            <img className="size-10 rounded-xl" src={company?.allen} alt="Allen Logo" />
                         </div>
                         <div className="list-col-grow">
                             <div>
@@ -32,7 +31,7 @@ function ProffessionalExperince() {
 
                             {/* Left: Image */}
                             <div className="w-full md:w-1/3 flex justify-center">
-                                <img src={allenIamge} alt="Project Preview" className="w-32 h-32 object-cover rounded-lg shadow" />
+                                <img src={company?.allen} alt="Project Preview" className="w-32 h-32 object-cover rounded-lg shadow" />
                             </div>
 
                             
@@ -55,7 +54,7 @@ function ProffessionalExperince() {
 
                         {/* Logo hidden when accordion is open */}
                         <div >
-                            <img className="size-10 rounded-xl" src={masaiImage} alt="Masai Logo" />
+                            <img className="size-10 rounded-xl" src={company?.masai} alt="Masai Logo" />
                         </div>
 
                         <div className="list-col-grow">
@@ -72,7 +71,7 @@ function ProffessionalExperince() {
 
                             {/* Left: Image */}
                             <div className="w-full md:w-1/3 flex justify-center">
-                                <img src={masaiImage} alt="Project Preview" className="w-32 h-32 object-cover rounded-lg shadow" />
+                                <img src={company?.masai} alt="Project Preview" className="w-32 h-32 object-cover rounded-lg shadow" />
                             </div>
 
                             {/* Vertical Divider */}
